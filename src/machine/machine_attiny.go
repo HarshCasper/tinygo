@@ -18,9 +18,3 @@ func (uart UART) Configure(config UARTConfig) {
 func (uart UART) WriteByte(c byte) error {
 	return nil
 }
-
-// Tx is a dummy implementation. I2C has not been implemented for ATtiny
-// devices.
-func (i2c I2C) Tx(addr uint16, w, r []byte) error {
-	return nil
-}
